@@ -42,7 +42,7 @@ BEGIN
 			TABLOCK
 		);
 		SET @end_time = GETDATE();
-		PRINT '>> Load Duration: ' + CAST(DATEDIFF(second,@start_time, @end_time) AS NVARCHAR) + 'seconds'; 
+		PRINT '>> Load Duration: ' + CAST(DATEDIFF(second,@start_time, @end_time) AS NVARCHAR) + ' seconds'; 
 		PRINT '--------------------------------';
 
 		SET @start_time = GETDATE();
@@ -57,7 +57,7 @@ BEGIN
 			TABLOCK
 		);
 		SET @end_time = GETDATE();
-		PRINT '>> Load Duration: ' + CAST(DATEDIFF(second,@start_time, @end_time) AS NVARCHAR) + 'seconds'; 
+		PRINT '>> Load Duration: ' + CAST(DATEDIFF(second,@start_time, @end_time) AS NVARCHAR) + ' seconds'; 
 		PRINT '--------------------------------';
 
 		SET @start_time = GETDATE();
@@ -72,7 +72,7 @@ BEGIN
 			TABLOCK
 		);
 		SET @end_time = GETDATE();
-		PRINT '>> Load Duration: ' + CAST(DATEDIFF(second,@start_time, @end_time) AS NVARCHAR) + 'seconds'; 
+		PRINT '>> Load Duration: ' + CAST(DATEDIFF(second,@start_time, @end_time) AS NVARCHAR) + ' seconds'; 
 		PRINT '--------------------------------';
 
 
@@ -92,7 +92,7 @@ BEGIN
 			TABLOCK
 		);
 		SET @end_time = GETDATE();
-		PRINT '>> Load Duration: ' + CAST(DATEDIFF(second,@start_time, @end_time) AS NVARCHAR) + 'seconds'; 
+		PRINT '>> Load Duration: ' + CAST(DATEDIFF(second,@start_time, @end_time) AS NVARCHAR) + ' seconds'; 
 		PRINT '--------------------------------';
 
 		SET @start_time = GETDATE();
@@ -107,7 +107,7 @@ BEGIN
 			TABLOCK
 		);
 		SET @end_time = GETDATE();
-		PRINT '>> Load Duration: ' + CAST(DATEDIFF(second,@start_time, @end_time) AS NVARCHAR) + 'seconds'; 
+		PRINT '>> Load Duration: ' + CAST(DATEDIFF(second,@start_time, @end_time) AS NVARCHAR) + ' seconds'; 
 		PRINT '--------------------------------';
 
 		SET @start_time = GETDATE();
@@ -122,21 +122,21 @@ BEGIN
 			TABLOCK
 		);
 		SET @end_time = GETDATE();
-		PRINT '>> Load Duration: ' + CAST(DATEDIFF(second,@start_time, @end_time) AS NVARCHAR) + 'seconds'; 
+		PRINT '>> Load Duration: ' + CAST(DATEDIFF(second,@start_time, @end_time) AS NVARCHAR) + ' seconds'; 
 		PRINT '--------------------------------';
 
 		SET @batch_end_time = GETDATE();
 		PRINT '================================';
 		PRINT 'Loading Bronze Layer is Completed';
-		PRINT '>> Total Load Duration: ' + CAST(DATEDIFF(second,@batch_start_time, @batch_end_time) AS NVARCHAR) + 'seconds';
+		PRINT '>> Total Load Duration: ' + CAST(DATEDIFF(second,@batch_start_time, @batch_end_time) AS NVARCHAR) + ' seconds';
 		PRINT '================================';
 	END TRY
 	BEGIN CATCH
 		PRINT '================================';
 		PRINT 'ERROR OCCURED DURING LOADING BRONZE LAYER';
-		PRINT 'ERROR MSG' + CAST(ERROR_MESSAGE() AS NVARCHAR);
-		PRINT 'ERROR MSG' + CAST(ERROR_NUMBER() AS NVARCHAR);
-		PRINT 'ERROR MSG' + CAST(ERROR_STATE() AS NVARCHAR);
+		PRINT 'ERROR MSG ' + CAST(ERROR_MESSAGE() AS NVARCHAR);
+		PRINT 'ERROR MSG ' + CAST(ERROR_NUMBER() AS NVARCHAR);
+		PRINT 'ERROR MSG ' + CAST(ERROR_STATE() AS NVARCHAR);
 		PRINT '================================';
 	END CATCH
 
