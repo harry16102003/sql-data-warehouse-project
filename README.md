@@ -112,5 +112,4 @@ This project is licensed under the [MIT License](LICENSE). You are free to use, 
 
 Hi there! I'm **Harsh Bandal**, a final-year Computer Engineering student at Sinhgad College of Engineering. I'm on a mission to make working with data not just insightful, but also enjoyable and engaging. With a strong passion for Data Analytics, I love turning raw information into meaningful stories and helping others understand and appreciate the power of data.
 
-Let's stay in touch! Feel free to connect with me on the following platforms:
 
